@@ -127,12 +127,8 @@ tailwind.config = { theme: { extend: {
 <section id="a-propos" class="py-16">
   <h2 class="t text-4xl md:text-5xl">À propos</h2>
   <div class="mt-8 grid md:grid-cols-6 gap-4">
-    <div class="g md:col-span-2 flex flex-col items-center justify-center text-center text-soft min-h-[220px]" style="border-style:dashed">
-      <!-- Remplace par : <img src="photo.jpg" alt="Théo Bricet" class="rounded-2xl w-full h-full object-cover"> -->
-      <span class="t text-6xl text-em">TB</span><span class="mt-3 text-sm">Ta photo professionnelle ici</span>
-    </div>
-    <div class="g g-em md:col-span-4 flex items-center">
-      <p class="t text-2xl md:text-3xl leading-snug">« Garantir la continuité de service, la sécurité des réseaux et la cohésion des équipes. »</p>
+    <div class="g g-em md:col-span-6 flex items-center justify-center text-center py-10 md:py-12">
+      <p class="t text-2xl md:text-3xl leading-snug max-w-3xl">« Garantir la continuité de service, la sécurité des réseaux et la cohésion des équipes. »</p>
     </div>
     <div class="g md:col-span-2">
       <h3 class="font-semibold">Disponibilité</h3>
@@ -772,87 +768,67 @@ tailwind.config = { theme: { extend: {
 </section>
 
 <!-- ============ VEILLE & OUTILS (veille, outils SISR, labo) ============ -->
-<!-- VEILLE TECHNOLOGIQUE & JURIDIQUE -->
+<!-- VEILLE TECHNOLOGIQUE -->
 <section id="veille" class="py-16">
-  <h2 class="t text-4xl md:text-5xl">Veille technologique &amp; juridique</h2>
-  <p class="mt-3 text-soft max-w-2xl">Quatre thématiques suivies régulièrement, appuyées sur des sources officielles.</p>
+  <h2 class="t text-4xl md:text-5xl">Veille technologique</h2>
+  <p class="mt-3 text-soft max-w-2xl">Je me tiens informé sur la protection des données, pour mieux comprendre les risques et les bons réflexes à adopter.</p>
 
-  <div class="g g-em mt-8 grid md:grid-cols-5 gap-6 md:gap-8 p-8">
-    <div class="md:col-span-3">
-      <p class="text-sm text-em font-medium">Ma veille</p>
-      <p class="mt-3 text-sm"><span class="text-em font-medium">Sujet : </span><span class="text-soft">Sécurité des données, hygiène informatique &amp; RGPD.</span></p>
-      <p class="mt-2 text-sm"><span class="text-em font-medium">Problématique : </span><span class="text-soft">Gestion des accès (MFA, GPO), prévention des fuites de données et sensibilisation aux risques.</span></p>
+  <!-- Sujet + problématique -->
+  <div class="g g-em mt-8 grid md:grid-cols-2 gap-6 md:gap-10 p-8">
+    <div>
+      <p class="text-sm text-em font-medium">Mon sujet</p>
+      <p class="t text-xl md:text-2xl mt-2 leading-snug">La sécurité des données, l'hygiène informatique au quotidien et le RGPD.</p>
     </div>
-    <div class="md:col-span-2">
-      <p class="text-sm font-semibold text-slate-900">Sources suivies</p>
-      <p class="mt-3 flex flex-wrap gap-2"><span class="chip">ANSSI (CERT-FR)</span><span class="chip">CNIL</span><span class="chip">IT-Connect</span><span class="chip">Feedly</span></p>
+    <div>
+      <p class="text-sm text-em font-medium">Ma problématique</p>
+      <p class="t text-xl md:text-2xl mt-2 leading-snug">Comment mieux protéger les accès et éviter les fuites de données, tout en sensibilisant les utilisateurs&nbsp;?</p>
     </div>
   </div>
 
+  <!-- Sources -->
+  <h3 class="t text-2xl mt-12">Mes sources principales</h3>
   <div class="mt-4 grid sm:grid-cols-2 gap-4 items-stretch">
     <article class="g flex flex-col">
-      <div class="flex items-center gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 text-white shadow-md ring-4 ring-white">
-          <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div>
-          <p class="text-xs font-medium text-em">Thématique 1</p>
-          <h3 class="t text-xl leading-snug">Sécurité des données &amp; Cybersécurité</h3>
-        </div>
-      </div>
-      <p class="mt-4 text-sm text-soft">Gestion des vulnérabilités et actualités des menaces.</p>
-      <div class="mt-auto pt-5">
-        <p class="text-xs font-semibold uppercase tracking-wide text-soft">Source officielle</p>
-        <div class="mt-2 flex flex-wrap gap-2"><span class="chip">ANSSI</span><span class="chip">CERT-FR</span></div>
-      </div>
+      <h4 class="font-semibold">ANSSI &amp; CERT-FR</h4>
+      <p class="mt-2 text-sm text-soft">Conseils d'hygiène informatique et alertes de sécurité.</p>
+      <a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 text-sm text-em font-medium hover:underline break-all">https://www.cert.ssi.gouv.fr/</a>
     </article>
     <article class="g flex flex-col">
-      <div class="flex items-center gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-500 to-teal-800 text-white shadow-md ring-4 ring-white">
-          <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
-        </div>
-        <div>
-          <p class="text-xs font-medium text-em">Thématique 2</p>
-          <h3 class="t text-xl leading-snug">Hygiène informatique</h3>
-        </div>
-      </div>
-      <p class="mt-4 text-sm text-soft">Mise en œuvre du guide d'hygiène informatique de l'ANSSI : bonnes pratiques, mots de passe, sauvegardes et mises à jour.</p>
-      <div class="mt-auto pt-5">
-        <p class="text-xs font-semibold uppercase tracking-wide text-soft">Source officielle</p>
-        <div class="mt-2 flex flex-wrap gap-2"><span class="chip">ANSSI · Guide d'hygiène informatique</span></div>
-      </div>
+      <h4 class="font-semibold">CNIL</h4>
+      <p class="mt-2 text-sm text-soft">Règles sur la protection des données et le RGPD.</p>
+      <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 text-sm text-em font-medium hover:underline break-all">https://www.cnil.fr/</a>
     </article>
     <article class="g flex flex-col">
-      <div class="flex items-center gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-800 text-white shadow-md ring-4 ring-white">
-          <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
-        <div>
-          <p class="text-xs font-medium text-em">Thématique 3</p>
-          <h3 class="t text-xl leading-snug">RGPD &amp; Protection des données</h3>
-        </div>
-      </div>
-      <p class="mt-4 text-sm text-soft">Principes du RGPD, registres des traitements et sensibilisation des utilisateurs.</p>
-      <div class="mt-auto pt-5">
-        <p class="text-xs font-semibold uppercase tracking-wide text-soft">Source officielle</p>
-        <div class="mt-2 flex flex-wrap gap-2"><span class="chip">CNIL</span><span class="chip">Atelier RGPD</span></div>
-      </div>
+      <h4 class="font-semibold">IT-Connect</h4>
+      <p class="mt-2 text-sm text-soft">Tutos et articles pratiques sur l'informatique.</p>
+      <a href="https://www.it-connect.fr/" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 text-sm text-em font-medium hover:underline break-all">https://www.it-connect.fr/</a>
     </article>
     <article class="g flex flex-col">
-      <div class="flex items-center gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-700 text-white shadow-md ring-4 ring-white">
-          <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
-        </div>
-        <div>
-          <p class="text-xs font-medium text-em">Thématique 4</p>
-          <h3 class="t text-xl leading-snug">Évolution tech (5G, IA &amp; Cryptographie)</h3>
-        </div>
-      </div>
-      <p class="mt-4 text-sm text-soft">Impact de l'IA et des nouvelles technologies sur la sécurité des réseaux.</p>
-      <div class="mt-auto pt-5">
-        <p class="text-xs font-semibold uppercase tracking-wide text-soft">Thèmes suivis</p>
-        <div class="mt-2 flex flex-wrap gap-2"><span class="chip">5G</span><span class="chip">IA</span><span class="chip">Cryptographie</span></div>
-      </div>
+      <h4 class="font-semibold">Le Monde Informatique</h4>
+      <p class="mt-2 text-sm text-soft">Actualités générales sur les fuites de données et la sécurité.</p>
+      <a href="https://www.lemondeinformatique.fr/" target="_blank" rel="noopener noreferrer" class="mt-auto pt-4 text-sm text-em font-medium hover:underline break-all">https://www.lemondeinformatique.fr/</a>
+    </article>
+  </div>
+
+  <!-- Méthode -->
+  <h3 class="t text-2xl mt-12">Comment je me tiens informé</h3>
+  <div class="g mt-4">
+    <p class="text-sm text-soft">Je lis des articles et je suis l'actualité grâce aux flux RSS (Feedly) et aux alertes Google. Je prends des notes sur les sujets importants.</p>
+    <p class="mt-4 flex flex-wrap gap-2"><span class="chip">Lecture d'articles</span><span class="chip">Flux RSS (Feedly)</span><span class="chip">Alertes Google</span><span class="chip">Prise de notes</span></p>
+  </div>
+
+  <!-- Suivi sur les 2 ans -->
+  <h3 class="t text-2xl mt-12">Mon suivi pendant le BTS (2025–2027)</h3>
+  <div class="mt-4 grid sm:grid-cols-2 gap-4 items-stretch">
+    <article class="g flex flex-col">
+      <p class="text-sm text-em font-medium">2025–2026</p>
+      <h4 class="font-semibold mt-1">Les bons réflexes au quotidien</h4>
+      <p class="mt-2 text-sm text-soft">J'ai suivi les conseils sur les mots de passe forts, la double authentification (MFA) et la sécurité des données.</p>
+    </article>
+    <article class="g flex flex-col">
+      <p class="text-sm text-em font-medium">2026–2027</p>
+      <h4 class="font-semibold mt-1">Les règles de la CNIL</h4>
+      <p class="mt-2 text-sm text-soft">Je suis l'évolution des règles de la CNIL pour protéger les données en entreprise et en télétravail.</p>
     </article>
   </div>
 </section>
