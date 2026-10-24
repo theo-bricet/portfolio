@@ -631,6 +631,177 @@ tailwind.config = { theme: { extend: {
     </div>
   </article>
 
+  <!-- RÉALISATIONS EN ENTREPRISE : STAGE DEAL & DMSOI -->
+  <div class="mt-12">
+    <p class="text-sm text-em font-medium">Réalisations en entreprise</p>
+    <h3 class="t text-2xl md:text-3xl mt-1">Missions de stage à la DEAL &amp; à la DMSOI</h3>
+    <p class="mt-2 text-soft max-w-2xl">Trois missions réelles menées durant mon stage de deux mois à la DEAL et à la DMSOI (La Réunion), avril–juin 2026.</p>
+  </div>
+
+  <div class="mt-6 space-y-4">
+
+    <!-- MISSION 1 : CARTOGRAPHIE -->
+    <details class="g">
+      <summary>
+        <span class="block text-sm text-em">Mission 1 · Stage DEAL &amp; DMSOI</span>
+        <span class="t text-2xl block mt-1 pr-8">Découverte et cartographie du réseau</span>
+        <span class="mt-3 flex flex-wrap gap-2">
+          <span class="chip">Draw.io</span><span class="chip">VMware ESXi</span><span class="chip">Fortigate</span><span class="chip">Cisco</span><span class="chip">RIE</span>
+        </span>
+      </summary>
+      <div class="mt-5 pt-5 border-t border-slate-900/10 space-y-4 text-sm">
+        <div><h4 class="font-semibold">Contexte</h4><p class="text-soft">Avant toute action de sécurisation, il fallait comprendre l'existant : visite physique des deux salles serveurs (DEAL et DMSOI), recensement des machines et des cycles de sauvegarde en place.</p></div>
+        <div><h4 class="font-semibold">Réalisation</h4>
+          <ul class="list-disc pl-5 text-soft">
+            <li>Audit physique des salles serveurs : refroidissement, baie de brassage, onduleurs, contrôle d'accès</li>
+            <li>Recensement des serveurs (hyperviseurs DMSOI_ESX01/02, NAS Synology, serveurs Linux EOLE) et de leur politique de sauvegarde existante</li>
+            <li>Modélisation du schéma complet sous Draw.io : virtualisation (ESX), stockage (NAS), interconnexion (switchs), sécurité (Fortigate) et tunnel RIE vers l'extérieur</li>
+          </ul>
+        </div>
+        <div><h4 class="font-semibold">Tâche du quotidien associée</h4><p class="text-soft">Participation en équipe de trois à la résolution d'une boucle réseau bloquant les utilisateurs de la DEAL : pendant que mes collègues testaient les ports du switch, j'ai inspecté les locaux et localisé un câble mal rebranché dans une salle de réunion, isolé aussitôt pour rétablir le réseau.</p></div>
+        <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Une cartographie réseau claire et deux points faibles identifiés : absence de tableau de bord unifié des sauvegardes, et copies stockées dans le même bâtiment que les serveurs d'origine — point de départ des missions 2 et 3.</p></div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Schéma réseau · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Architecture réseau de la DMSOI</h5>
+              <p class="mt-1 text-sm text-soft">Schéma Draw.io : Fortigate, VLAN Admin, LAN, hyperviseurs ESX, NAS Synology et lien RIE.</p>
+            </div>
+          </div>
+          <a href="Architecture_Reseau_DMSOI_Theo.drawio.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le schéma d'architecture réseau de la DMSOI (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip">Administrer les systèmes et les réseaux</span><span class="chip">Gérer le patrimoine informatique</span><span class="chip">Travailler en mode projet</span>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- MISSION 2 : PLAN DE SAUVEGARDE -->
+    <details class="g g-em">
+      <summary>
+        <span class="block text-sm text-em">Mission 2 · Stage DMSOI</span>
+        <span class="t text-2xl block mt-1 pr-8">Élaboration du plan de sauvegarde (règle 3-2-1)</span>
+        <span class="mt-3 flex flex-wrap gap-2">
+          <span class="chip">Synology NAS</span><span class="chip">Hyper Backup</span><span class="chip">API S3</span><span class="chip">RIE</span><span class="chip">Veeam</span>
+        </span>
+      </summary>
+      <div class="mt-5 pt-5 border-t border-slate-900/10 space-y-4 text-sm">
+        <div><h4 class="font-semibold">Contexte</h4><p class="text-soft">Formaliser une stratégie de protection des données de la DMSOI face à quatre risques : pannes matérielles, erreurs humaines, cybercriminalité (ransomware) et sinistres physiques — un enjeu renforcé par le climat cyclonique et l'éloignement géographique de La Réunion.</p></div>
+        <div><h4 class="font-semibold">Réalisation</h4>
+          <ul class="list-disc pl-5 text-soft">
+            <li>Audit serveur par serveur des sauvegardes existantes (tableau de suivi) : mise en évidence d'une base de données non sauvegardée (SRV-GRR) et de deux hyperviseurs sans plan de secours propre</li>
+            <li>Définition de la cible 3-2-1 : 3 copies, 2 supports (NAS local + réplication entre DMSOI_ESX01 et DMSOI_ESX02), 1 site extérieur via le cloud souverain B3</li>
+            <li>Conception du mécanisme d'externalisation chiffrée : NAS Synology en passerelle vers B3 (DNUM) par API S3, en transitant uniquement par le RIE, jamais sur l'internet public</li>
+            <li>Définition des cycles de rétention : archives courantes (30 j – 3 mois), intermédiaires (6 mois – 2 ans), longue durée B3 (2 ans max)</li>
+          </ul>
+        </div>
+        <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Un plan de sauvegarde documenté et une matrice des périmètres (LAN, VLAN Admin, matériel actif) avec cible principale et cible hors-site pour chaque segment — feuille de route validée par mon maître de stage, en cours de déploiement au-delà de mon stage.</p></div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Plan de sauvegarde · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Plan de sauvegarde de la DMSOI</h5>
+              <p class="mt-1 text-sm text-soft">Risques couverts, règle 3-2-1, externalisation B3, politique de rétention et matrice des périmètres.</p>
+            </div>
+          </div>
+          <a href="Plan_de_sauvegarde_DMSOI.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le plan de sauvegarde de la DMSOI (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Tableau de suivi · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Tableau récapitulatif des sauvegardes</h5>
+              <p class="mt-1 text-sm text-soft">Audit serveur par serveur : lieu, fréquence, profondeur et vérification des sauvegardes existantes.</p>
+            </div>
+          </div>
+          <a href="Plan_de_sauvegarde_DMSOI_Tableau.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le tableau récapitulatif des sauvegardes (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip">Assurer la continuité de service</span><span class="chip">Protéger les données</span><span class="chip">Mettre en œuvre une politique de sécurité</span>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- MISSION 3 : VIRTUALISATION DHCP -->
+    <details class="g">
+      <summary>
+        <span class="block text-sm text-em">Mission 3 · Stage DEAL</span>
+        <span class="t text-2xl block mt-1 pr-8">Virtualisation et déploiement d'un serveur DHCP sur NAS Synology</span>
+        <span class="mt-3 flex flex-wrap gap-2">
+          <span class="chip">Windows Server 2016</span><span class="chip">DHCP</span><span class="chip">Synology VMM</span><span class="chip">Linux (Lubuntu)</span><span class="chip">Snapshots</span>
+        </span>
+      </summary>
+      <div class="mt-5 pt-5 border-t border-slate-900/10 space-y-4 text-sm">
+        <div><h4 class="font-semibold">Contexte</h4><p class="text-soft">Créer une maquette réseau virtuelle complète pour tester un serveur DHCP sans perturber le réseau réel de l'entreprise, sur le NAS Synology de la DEAL.</p></div>
+        <div><h4 class="font-semibold">Réalisation</h4>
+          <ul class="list-disc pl-5 text-soft">
+            <li>Préparation du NAS (Synology Assistant, dossier partagé dédié) et activation de Virtual Machine Manager</li>
+            <li>Déploiement d'une VM Windows Server 2016, IP fixe (192.168.10.10), installation et configuration du rôle DHCP avec l'étendue LAN-DHCP (192.168.10.192 – .254)</li>
+            <li>Ajout d'un client Linux et validation par <code>ip a</code> et un test de ping bout en bout</li>
+            <li>Mise en place d'une sauvegarde automatique quotidienne par snapshots via l'hyperviseur</li>
+          </ul>
+        </div>
+        <div><h4 class="font-semibold">Incident &amp; solution</h4><p class="text-soft">Au premier démarrage, la carte réseau du serveur s'est connectée par défaut au commutateur principal du NAS, relié au réseau réel de la DEAL : mon serveur de test a distribué de mauvaises adresses IP et coupé l'accès internet de plusieurs agents. Mon maître de stage a désactivé l'étendue en urgence, puis m'a laissé mener seul l'investigation. En analysant les journaux et les commutateurs virtuels, j'ai identifié l'absence d'isolation réseau et créé un vSwitch dédié en mode <em>Privé</em> (<code>Reseau-Prive-Test</code>), sur lequel j'ai rebranché mon serveur et mon client avant de réactiver le service en toute sécurité.</p></div>
+        <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Infrastructure de test fonctionnelle, hermétique et sauvegardée automatiquement — et une méthode d'isolation systématique que j'applique désormais à toute nouvelle maquette avant son premier démarrage.</p></div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Compte rendu · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Compte rendu : DHCP sur NAS Synology</h5>
+              <p class="mt-1 text-sm text-soft">Déploiement pas à pas : Windows Server 2016 et DHCP, incident réseau, client Linux et plan de snapshots.</p>
+            </div>
+          </div>
+          <a href="Compte_rendu_Assistant_Synology.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le compte rendu Synology et DHCP (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip">Installer, tester et déployer</span><span class="chip">Répondre aux incidents</span><span class="chip">Exploiter, dépanner</span>
+          </div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+
   <!-- Focus stage -->
   <h3 class="t text-2xl md:text-3xl mt-12">Compétences clés du stage</h3>
   <div class="g mt-4 grid sm:grid-cols-3 gap-6">
@@ -978,176 +1149,6 @@ tailwind.config = { theme: { extend: {
         </div>
       </div>
     </article>
-  </div>
-</section>
-
-<!-- LABO -->
-<section id="labo" class="py-16">
-  <h2 class="t text-4xl md:text-5xl">Projets / Labo</h2>
-  <p class="mt-3 text-soft max-w-2xl">Trois missions réelles menées durant mon stage de deux mois à la DEAL et à la DMSOI (La Réunion), avril–juin 2026.</p>
-
-  <div class="mt-8 space-y-4">
-
-    <!-- MISSION 1 : CARTOGRAPHIE -->
-    <details class="g">
-      <summary>
-        <span class="block text-sm text-em">Mission 1 · Stage DEAL &amp; DMSOI</span>
-        <span class="t text-2xl block mt-1 pr-8">Découverte et cartographie du réseau</span>
-        <span class="mt-3 flex flex-wrap gap-2">
-          <span class="chip">Draw.io</span><span class="chip">VMware ESXi</span><span class="chip">Fortigate</span><span class="chip">Cisco</span><span class="chip">RIE</span>
-        </span>
-      </summary>
-      <div class="mt-5 pt-5 border-t border-slate-900/10 space-y-4 text-sm">
-        <div><h4 class="font-semibold">Contexte</h4><p class="text-soft">Avant toute action de sécurisation, il fallait comprendre l'existant : visite physique des deux salles serveurs (DEAL et DMSOI), recensement des machines et des cycles de sauvegarde en place.</p></div>
-        <div><h4 class="font-semibold">Réalisation</h4>
-          <ul class="list-disc pl-5 text-soft">
-            <li>Audit physique des salles serveurs : refroidissement, baie de brassage, onduleurs, contrôle d'accès</li>
-            <li>Recensement des serveurs (hyperviseurs DMSOI_ESX01/02, NAS Synology, serveurs Linux EOLE) et de leur politique de sauvegarde existante</li>
-            <li>Modélisation du schéma complet sous Draw.io : virtualisation (ESX), stockage (NAS), interconnexion (switchs), sécurité (Fortigate) et tunnel RIE vers l'extérieur</li>
-          </ul>
-        </div>
-        <div><h4 class="font-semibold">Tâche du quotidien associée</h4><p class="text-soft">Participation en équipe de trois à la résolution d'une boucle réseau bloquant les utilisateurs de la DEAL : pendant que mes collègues testaient les ports du switch, j'ai inspecté les locaux et localisé un câble mal rebranché dans une salle de réunion, isolé aussitôt pour rétablir le réseau.</p></div>
-        <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Une cartographie réseau claire et deux points faibles identifiés : absence de tableau de bord unifié des sauvegardes, et copies stockées dans le même bâtiment que les serveurs d'origine — point de départ des missions 2 et 3.</p></div>
-        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
-          <div class="flex items-start gap-4">
-            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
-              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
-            </div>
-            <div>
-              <p class="text-xs font-medium text-em">Schéma réseau · PDF</p>
-              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Architecture réseau de la DMSOI</h5>
-              <p class="mt-1 text-sm text-soft">Schéma Draw.io : Fortigate, VLAN Admin, LAN, hyperviseurs ESX, NAS Synology et lien RIE.</p>
-            </div>
-          </div>
-          <a href="Architecture_Reseau_DMSOI_Theo.drawio.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le schéma d'architecture réseau de la DMSOI (PDF)"
-             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
-            Consulter le document
-          </a>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="chip">Administrer les systèmes et les réseaux</span><span class="chip">Gérer le patrimoine informatique</span><span class="chip">Travailler en mode projet</span>
-          </div>
-        </div>
-      </div>
-    </details>
-
-    <!-- MISSION 2 : PLAN DE SAUVEGARDE -->
-    <details class="g g-em">
-      <summary>
-        <span class="block text-sm text-em">Mission 2 · Stage DMSOI</span>
-        <span class="t text-2xl block mt-1 pr-8">Élaboration du plan de sauvegarde (règle 3-2-1)</span>
-        <span class="mt-3 flex flex-wrap gap-2">
-          <span class="chip">Synology NAS</span><span class="chip">Hyper Backup</span><span class="chip">API S3</span><span class="chip">RIE</span><span class="chip">Veeam</span>
-        </span>
-      </summary>
-      <div class="mt-5 pt-5 border-t border-slate-900/10 space-y-4 text-sm">
-        <div><h4 class="font-semibold">Contexte</h4><p class="text-soft">Formaliser une stratégie de protection des données de la DMSOI face à quatre risques : pannes matérielles, erreurs humaines, cybercriminalité (ransomware) et sinistres physiques — un enjeu renforcé par le climat cyclonique et l'éloignement géographique de La Réunion.</p></div>
-        <div><h4 class="font-semibold">Réalisation</h4>
-          <ul class="list-disc pl-5 text-soft">
-            <li>Audit serveur par serveur des sauvegardes existantes (tableau de suivi) : mise en évidence d'une base de données non sauvegardée (SRV-GRR) et de deux hyperviseurs sans plan de secours propre</li>
-            <li>Définition de la cible 3-2-1 : 3 copies, 2 supports (NAS local + réplication entre DMSOI_ESX01 et DMSOI_ESX02), 1 site extérieur via le cloud souverain B3</li>
-            <li>Conception du mécanisme d'externalisation chiffrée : NAS Synology en passerelle vers B3 (DNUM) par API S3, en transitant uniquement par le RIE, jamais sur l'internet public</li>
-            <li>Définition des cycles de rétention : archives courantes (30 j – 3 mois), intermédiaires (6 mois – 2 ans), longue durée B3 (2 ans max)</li>
-          </ul>
-        </div>
-        <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Un plan de sauvegarde documenté et une matrice des périmètres (LAN, VLAN Admin, matériel actif) avec cible principale et cible hors-site pour chaque segment — feuille de route validée par mon maître de stage, en cours de déploiement au-delà de mon stage.</p></div>
-        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
-          <div class="flex items-start gap-4">
-            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
-              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
-            </div>
-            <div>
-              <p class="text-xs font-medium text-em">Plan de sauvegarde · PDF</p>
-              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Plan de sauvegarde de la DMSOI</h5>
-              <p class="mt-1 text-sm text-soft">Risques couverts, règle 3-2-1, externalisation B3, politique de rétention et matrice des périmètres.</p>
-            </div>
-          </div>
-          <a href="Plan_de_sauvegarde_DMSOI.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le plan de sauvegarde de la DMSOI (PDF)"
-             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
-            Consulter le document
-          </a>
-        </div>
-        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
-          <div class="flex items-start gap-4">
-            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
-              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
-            </div>
-            <div>
-              <p class="text-xs font-medium text-em">Tableau de suivi · PDF</p>
-              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Tableau récapitulatif des sauvegardes</h5>
-              <p class="mt-1 text-sm text-soft">Audit serveur par serveur : lieu, fréquence, profondeur et vérification des sauvegardes existantes.</p>
-            </div>
-          </div>
-          <a href="Plan_de_sauvegarde_DMSOI_Tableau.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le tableau récapitulatif des sauvegardes (PDF)"
-             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
-            Consulter le document
-          </a>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="chip">Assurer la continuité de service</span><span class="chip">Protéger les données</span><span class="chip">Mettre en œuvre une politique de sécurité</span>
-          </div>
-        </div>
-      </div>
-    </details>
-
-    <!-- MISSION 3 : VIRTUALISATION DHCP -->
-    <details class="g">
-      <summary>
-        <span class="block text-sm text-em">Mission 3 · Stage DEAL</span>
-        <span class="t text-2xl block mt-1 pr-8">Virtualisation et déploiement d'un serveur DHCP sur NAS Synology</span>
-        <span class="mt-3 flex flex-wrap gap-2">
-          <span class="chip">Windows Server 2016</span><span class="chip">DHCP</span><span class="chip">Synology VMM</span><span class="chip">Linux (Lubuntu)</span><span class="chip">Snapshots</span>
-        </span>
-      </summary>
-      <div class="mt-5 pt-5 border-t border-slate-900/10 space-y-4 text-sm">
-        <div><h4 class="font-semibold">Contexte</h4><p class="text-soft">Créer une maquette réseau virtuelle complète pour tester un serveur DHCP sans perturber le réseau réel de l'entreprise, sur le NAS Synology de la DEAL.</p></div>
-        <div><h4 class="font-semibold">Réalisation</h4>
-          <ul class="list-disc pl-5 text-soft">
-            <li>Préparation du NAS (Synology Assistant, dossier partagé dédié) et activation de Virtual Machine Manager</li>
-            <li>Déploiement d'une VM Windows Server 2016, IP fixe (192.168.10.10), installation et configuration du rôle DHCP avec l'étendue LAN-DHCP (192.168.10.192 – .254)</li>
-            <li>Ajout d'un client Linux et validation par <code>ip a</code> et un test de ping bout en bout</li>
-            <li>Mise en place d'une sauvegarde automatique quotidienne par snapshots via l'hyperviseur</li>
-          </ul>
-        </div>
-        <div><h4 class="font-semibold">Incident &amp; solution</h4><p class="text-soft">Au premier démarrage, la carte réseau du serveur s'est connectée par défaut au commutateur principal du NAS, relié au réseau réel de la DEAL : mon serveur de test a distribué de mauvaises adresses IP et coupé l'accès internet de plusieurs agents. Mon maître de stage a désactivé l'étendue en urgence, puis m'a laissé mener seul l'investigation. En analysant les journaux et les commutateurs virtuels, j'ai identifié l'absence d'isolation réseau et créé un vSwitch dédié en mode <em>Privé</em> (<code>Reseau-Prive-Test</code>), sur lequel j'ai rebranché mon serveur et mon client avant de réactiver le service en toute sécurité.</p></div>
-        <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Infrastructure de test fonctionnelle, hermétique et sauvegardée automatiquement — et une méthode d'isolation systématique que j'applique désormais à toute nouvelle maquette avant son premier démarrage.</p></div>
-        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
-          <div class="flex items-start gap-4">
-            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
-              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
-              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
-            </div>
-            <div>
-              <p class="text-xs font-medium text-em">Compte rendu · PDF</p>
-              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Compte rendu : DHCP sur NAS Synology</h5>
-              <p class="mt-1 text-sm text-soft">Déploiement pas à pas : Windows Server 2016 et DHCP, incident réseau, client Linux et plan de snapshots.</p>
-            </div>
-          </div>
-          <a href="Compte_rendu_Assistant_Synology.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le compte rendu Synology et DHCP (PDF)"
-             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
-            Consulter le document
-          </a>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="chip">Installer, tester et déployer</span><span class="chip">Répondre aux incidents</span><span class="chip">Exploiter, dépanner</span>
-          </div>
-        </div>
-      </div>
-    </details>
-
   </div>
 </section>
 
