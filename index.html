@@ -1008,6 +1008,24 @@ tailwind.config = { theme: { extend: {
         </div>
         <div><h4 class="font-semibold">Tâche du quotidien associée</h4><p class="text-soft">Participation en équipe de trois à la résolution d'une boucle réseau bloquant les utilisateurs de la DEAL : pendant que mes collègues testaient les ports du switch, j'ai inspecté les locaux et localisé un câble mal rebranché dans une salle de réunion, isolé aussitôt pour rétablir le réseau.</p></div>
         <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Une cartographie réseau claire et deux points faibles identifiés : absence de tableau de bord unifié des sauvegardes, et copies stockées dans le même bâtiment que les serveurs d'origine — point de départ des missions 2 et 3.</p></div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Schéma réseau · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Architecture réseau de la DMSOI</h5>
+              <p class="mt-1 text-sm text-soft">Schéma Draw.io : Fortigate, VLAN Admin, LAN, hyperviseurs ESX, NAS Synology et lien RIE.</p>
+            </div>
+          </div>
+          <a href="Architecture_Reseau_DMSOI_Theo.drawio.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le schéma d'architecture réseau de la DMSOI (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
         <div>
           <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
           <div class="flex flex-wrap gap-2">
@@ -1037,6 +1055,42 @@ tailwind.config = { theme: { extend: {
           </ul>
         </div>
         <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Un plan de sauvegarde documenté et une matrice des périmètres (LAN, VLAN Admin, matériel actif) avec cible principale et cible hors-site pour chaque segment — feuille de route validée par mon maître de stage, en cours de déploiement au-delà de mon stage.</p></div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Plan de sauvegarde · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Plan de sauvegarde de la DMSOI</h5>
+              <p class="mt-1 text-sm text-soft">Risques couverts, règle 3-2-1, externalisation B3, politique de rétention et matrice des périmètres.</p>
+            </div>
+          </div>
+          <a href="Plan_de_sauvegarde_DMSOI.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le plan de sauvegarde de la DMSOI (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Tableau de suivi · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Tableau récapitulatif des sauvegardes</h5>
+              <p class="mt-1 text-sm text-soft">Audit serveur par serveur : lieu, fréquence, profondeur et vérification des sauvegardes existantes.</p>
+            </div>
+          </div>
+          <a href="Plan_de_sauvegarde_DMSOI_Tableau.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le tableau récapitulatif des sauvegardes (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
         <div>
           <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
           <div class="flex flex-wrap gap-2">
@@ -1067,6 +1121,24 @@ tailwind.config = { theme: { extend: {
         </div>
         <div><h4 class="font-semibold">Incident &amp; solution</h4><p class="text-soft">Au premier démarrage, la carte réseau du serveur s'est connectée par défaut au commutateur principal du NAS, relié au réseau réel de la DEAL : mon serveur de test a distribué de mauvaises adresses IP et coupé l'accès internet de plusieurs agents. Mon maître de stage a désactivé l'étendue en urgence, puis m'a laissé mener seul l'investigation. En analysant les journaux et les commutateurs virtuels, j'ai identifié l'absence d'isolation réseau et créé un vSwitch dédié en mode <em>Privé</em> (<code>Reseau-Prive-Test</code>), sur lequel j'ai rebranché mon serveur et mon client avant de réactiver le service en toute sécurité.</p></div>
         <div><h4 class="font-semibold">Résultat</h4><p class="text-soft">Infrastructure de test fonctionnelle, hermétique et sauvegardée automatiquement — et une méthode d'isolation systématique que j'applique désormais à toute nouvelle maquette avant son premier démarrage.</p></div>
+        <div class="flex flex-col gap-5 rounded-2xl border border-slate-900/10 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div class="flex items-start gap-4">
+            <div class="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-blue-900 text-white shadow-md ring-4 ring-white">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span class="absolute -bottom-2 -right-2 rounded-md bg-cu px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow">PDF</span>
+            </div>
+            <div>
+              <p class="text-xs font-medium text-em">Compte rendu · PDF</p>
+              <h5 class="mt-0.5 text-lg font-bold text-slate-900">Compte rendu : DHCP sur NAS Synology</h5>
+              <p class="mt-1 text-sm text-soft">Déploiement pas à pas : Windows Server 2016 et DHCP, incident réseau, client Linux et plan de snapshots.</p>
+            </div>
+          </div>
+          <a href="Compte_rendu_Assistant_Synology.pdf" target="_blank" rel="noopener noreferrer" aria-label="Consulter le compte rendu Synology et DHCP (PDF)"
+             class="dl-btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-cu px-6 py-3 font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Consulter le document
+          </a>
+        </div>
         <div>
           <h4 class="font-semibold mb-2">Compétences BTS SIO mobilisées</h4>
           <div class="flex flex-wrap gap-2">
